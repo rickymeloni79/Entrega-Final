@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS - Ricardo Meloni - Comi: 62025</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Consultorio Médico</h1>
+    
+    <form id="turnoForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+    
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido">
+    
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono">
+    
+        <label for="esPacientePrevio">Check Paciente Previo</label>
+        <input type="checkbox" id="esPacientePrevio">
+    
+        <button type="button" onclick="agregarTurno()">Agregar Turno</button>
+    </form>
+    
+    <h2>Información</h2>
+    <p id="infoDemora"></p>
+    <p id="infoTurnos"></p>
+    <p id="infoDemoraTotal"></p>
+    
+    <h2>Listado de Turnos</h2>
+    <ul id="listaTurnos"></ul>
+    
+    <h3 class="btn">Reseñas de Pacientes 👇👇</h3>
+    <hr />
+    
+    <div class="resenas">
+        <ul id="listado"></ul>
+    </div>
+    
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
